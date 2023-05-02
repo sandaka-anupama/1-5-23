@@ -1,0 +1,24 @@
+#PROGRAM TO PREPARE STUDENT DICTIONARY
+std={}
+n=int(input("enter no.of students:"))
+for i in range(1,n+1):
+    l=[]
+    sno=int(input("Enter student no"))
+    sname=input("Enter student name")
+    group=input("enter group")
+    college=input("enter college name")
+    branch=input("enter branch name")
+    phno=int(input("enter phone number"))
+    l.append(sname)
+    l.append(group)
+    l.append(college)
+    l.append(branch)
+    l.append(phno)
+    std[sno]=l
+print(std)
+sno=int(input("enter student number for details"))
+print('student name:',std[sno][0])
+print('group:',std[sno][1])
+print('college:',std[sno][2])
+print('branch:',std[sno][3])
+print('phno:',std[sno][4])
