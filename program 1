@@ -1,0 +1,21 @@
+#TO CREATE PLAYER DICTIONARY
+ind={}
+n=int(input("Enter no of players:"))
+for i in range(1,n+1):
+    l=[]
+    pno=int(input("Enter player no"))
+    pname=input("Enter player name")
+    matches=int(input("enter no off matches"))
+    runs=int(input("how many runs scored"))
+    wickets=int(input("how many wickets taken"))
+    l.append(pname)
+    l.append(matches)
+    l.append(runs)
+    l.append(wickets)
+    ind[pno]=l
+print(ind)
+pno=int(input('enter player number for details'))
+print('player name:',ind[pno][0])
+print('Number of matches:',ind[pno][1])
+print('runs:',ind[pno][2])
+print('wickets:',ind[pno][3])
